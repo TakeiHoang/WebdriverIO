@@ -1,6 +1,9 @@
 # WebdriverIO
-download chrome apk
-
-npm install -- to install all package
-
-npx wdio ./wdio.conf.ts -- to run test
+Download chrome apk
+Make sure you using emulator from android studio
+-- To install all package
+npm install 
+-- To run test
+npx wdio ./wdio.conf.ts 
+-- To generate report
+npx allure serve allure-results
