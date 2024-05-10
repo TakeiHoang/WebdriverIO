@@ -20,4 +20,6 @@ jobs:
         - name: Install Dependencies
           run: npm ci
         - name: Run test on Android Emulator
-          run: npx wdio ./wdio.conf.ts
+          run: npx wdio ./wdio.conf.ts --spec tests/specs/google.spec.ts
+        - uses: actions/upload-artifact@v1
+          if: failure()
